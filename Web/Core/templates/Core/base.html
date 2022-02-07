@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title%} {% endblock %}  "Estudio Juridico"</title>
+
+    <!-- Estilos y fuentes del template  -->
+    {% load static %}
+    <link href="{% static 'Core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="{% static 'Core/css/clean-blog.min.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navegación -->
+  
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid"> 
+  <a class="navbar-brand" href="{% url 'Inicio' %} "{% url 'Inicio' %}"><img src="{% static 'core/img/Logo.jpg' %}" alt="" width="70" height="52"> 
+      <a class="navbar-brand" href="{% url 'Inicio' %}"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menú
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'Inicio' %}">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'Quienes Somos' %}">¿Quienes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'Noticias' %}">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'Servicios' %}">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'Cursos' %}">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'Contacto' %}">Contacto</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- Cabecera -->
+ <header class="masthead" style="background-image: url('{% static 'Core/img/Fondo.jpg' %}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+            {% block headers %}{% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- contenido -->
+<div class="container">
+      <div class="row">   
+        {% block content%} {% endblock %}
+      </div>  
+    </div>
+  {% if request.path != "/" %}<hr>{% endif %}
+    <!-- Pié de página -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="mailto:espeche.echeverria.abogados@gmail.com" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/NICET-JUJUY-102927685155569">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; 2021 · Estudio Juridico </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+     <style>
+
+.whatsapp {
+ position: fixed; 
+ right:25px; /*Margen derecho*/
+ bottom:20px; /*Margen abajo*/
+ z-index:999;
+}
+.whatsapp img {
+ width:60px; /*Alto del icono*/
+ height:60px; /*Ancho del icono*/
+}
+.whatsapp:hover{
+opacity: 0.7 !important;
+filter: alpha(opacity=70) !important;
+}
+
+</style>
+
+<div class="whatsapp">
+ <a href="https://api.whatsapp.com/send?phone=+5493886650544" target="_blank" title="Contactame por Whatsapp">
+ <img src="https://www.peengler.com/wp-content/uploads/whatsapp.png" alt="WhatsApp" />
+ </a>
+</div>
+
+
+
+    <!-- Bootstrap y Javascripts -->
+    <script src="{% static 'Core/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'Core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'Core/js/clean-blog.min.js' %}"></script>
+
+  </body>
+
+</html>

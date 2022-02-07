@@ -1,0 +1,169 @@
+{% extends 'Core/base.html' %}
+
+
+
+{% block title %}Inicio{% endblock %}
+
+{% block background %} {% load static %} {% static 'core/img/Fondo.jpg' %} {% endblock %}
+
+{% block headers %}
+
+
+<div class="w3-container w3-green">
+   
+  <h2><i>Espeche y Echeverria</i></h2> 
+  <h3>Abogados</h3> 
+</div>
+
+  
+<div class="w3-row-padding">
+  <div class="w3-third">
+    
+   <div class="row">
+   <ul class="list-inline imag-center">
+  
+      <div class="w3-content center w3-section" style="max-width:1400px">
+       
+
+      <img class="mySlides w3-animate-fading" src="{% static 'core/img/Fondo.jpg' %}" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="{% static 'core/img/biblioteca.jpeg' %}" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="{% static 'core/img/leo.png' %}" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="{% static 'core/img/Aby.jpeg' %}" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="{% static 'core/img/placa.jpeg' %}" style="width:100%">
+      
+    
+  
+  
+    </div>
+ 
+  
+
+  
+  
+{% endblock %}
+
+{% block content%}
+<!-- Page Content -->
+
+    <!-- Related Projects Row -->
+     
+        
+     
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+  
+ 
+
+  
+    <!-- Related Projects Row -->
+   <!-- Related Projects Row -->
+    
+            <ul class="list-inline text-center">
+              <h1 class="my-4">NUESTROS SERVICIOS  </h1>
+  
+    <div class="row">
+  
+        <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Consultas</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Precios.jpg' %}" alt="">
+            </a>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Fuero Familia</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Fondo.jpg' %}" alt="">
+            </a>
+      </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Fuero Laboral</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Inicio.jpg' %}" alt="">
+            </a>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Fuero Penal</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Penal.jpg' %}" alt="">
+            </a>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Fuero Civil y Comercial</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Inicio.jpg' %}" alt="">
+            </a>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Fuero Contencioso Administrativo</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Inicio-bg.jpg' %}" alt="">
+            </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Fuero Violencia de Genero</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Penal.jpg' %}" alt="">
+            </a>
+      </div>
+       
+               <div class="col-md-3 col-sm-6 mb-4">
+      <h3>Gestiones ExtraJudiciales</h3>
+        <a href="Servicios">
+              <img class="img-fluid" src="{% static 'core/img/Cursos.jpg' %}" alt="">
+            </a>
+      </div>
+  
+
+  
+    </div>
+  
+    
+    <!-- /.row -->
+ 
+ <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+            <h1>Nuestra Ubicacion</h1>
+              <li class="list-inline-item">
+                <a href="">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.709394678062!2d-65.30997398565795!3d-24.18192248437839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f6a94d7e141%3A0xedb6efdbedaeb613!2sSalta%201048%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1638468878849!5m2!1ses!2sar" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </a>
+              </li>
+  </div>
+ <section class="py-5">
+  <div class="container">
+    <h2 class="fw-light">Estudio Jurídico Espeche & Echeverría</h2>
+    <p> Es un despacho de abogados donde nos dedicamos a la atención integral.
+      Atendemos casos de familia, sucesiones, civil y comercial, daños y perjuicios, laboral, administrativo y penal.
+      Contamos con amplia financiación para contratar nuestro servicios: contado, cuenta corriente, transferencias, tarjetas de crédito y débito.
+      Atención online para que consulte de cualquier lugar las dudas que tenga y para saber el estado de su caso.</p>
+  </div>
+</section>
+  
+
+
+ {% endblock %}
+
+
+

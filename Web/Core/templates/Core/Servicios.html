@@ -1,0 +1,275 @@
+{% extends 'Core/base.html' %}
+{% block title %}Inicio{% endblock %}
+
+{% block background %} {% load static %} {% static 'core/img/Fondo.jpeg' %} {% endblock %}
+
+{% block headers %}
+
+<div class="w3-container w3-green">
+  <h1>Espeche y Echeverria</h1> 
+  <h2>Abogados</h2> 
+</div>
+
+{% endblock %}
+
+{% block content%} 
+<ul class="list-inline text-center">
+ <h1 class="my-4">"SERVICIOS JUDICIALES"
+        <small></small>
+    </h1>
+
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'Contacto' %}">Consulta</a>
+                    </h4>
+                    <p class="card-text">
+                      <ol>
+
+                       <li> CONSULTA VERBAL</li>
+                       <li>CONSULTA ESCRITA </li>
+                       <li>CONSULTA VIRTUAL </li>
+
+                       </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'Contacto' %}">Fuero de Familia</a>
+                    </h4>
+                    <p class="card-text">
+                      <ol>
+
+                       <li> DIVORCIO </li>
+                       <li>ALIMENTOS </li>
+                       <li> CESACIÓN / REDUCCIÓN de CUOTA ALIM. </li>
+                       <li> AUMENTO de CUOTA ALIMENTARIA </li>
+                       <li> CUIDADO PERSONAL</li>
+                       <li> DETERMINACIÓN de CAPACIDAD JURÍDICA</li>
+                       <li> OFRECIMIENTO de CUOTA ALIMENTARIA</li>
+                       <li> PAGO por CONSIGNACIÓN</li>
+                       <li> ADOPCIÓN SIMPLE</li>
+                       <li> ADOPCIÓN PLENA</li>
+                       <li> AUTORIZACIÓN JUDICIAL de VIAJE</li>
+                       <li> RESPONSABILIDAD PARENTAL</li>
+                       <li> RÉGIMEN COMUNICACIONAL</li>
+                       <li> EJECUCIÓN de CUOTA/CONVENIO</li>
+                       <li> GUARDA DELEGADA</li>
+                       <li> GUARDA con FINES DE ADOPCIÓN</li>
+                       <li> LIQUID de COMUNIDAD CONYUGAL</li>
+                       <li> TUTELA CURATELA / DESIGNACIÓN CURADOR</li>
+                       <li> IMPUGNACIÓN de RECONOCIMIENTO</li>
+                       <li> FILIACIÓN</li>
+                       <li>HOMOLOGACIÓN de CONVENIO</li>
+                       <li>PEDIDO AUDIENCIA de AVENIMIENTO</li>
+                      </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="Inicio"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'Contacto' %}">Fuero Laboral</a>
+                    </h4>
+                    <p class="card-text">
+                      <ol>
+                        <li>CONTESTACIÓN de DEMANDA</li>
+                        <li>AUDIENCIA de VISTA de CAUSA</li>
+                        <li>ACUERDO TRANSACCIONAL</li>
+                        <li>RECURSO de INCONSTITUCIONALIDAD</li>
+                        <li>DEMANDA de EXCLUSIÓN de
+                            TUTELA SINDICAL</li>
+                      </ol>
+ 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Fuero Penal</a>
+                    </h4>
+                    <p class="card-text">
+                      <ol>
+
+                        <li>DILIGENCIAS PRELIMINARES y POLICIALES (c/u)</li>
+                        <li>ASUMIR el CARGO de DEFENSOR PENAL</li>
+                        <li>CESE DE DETENCIÓN o EXTENSIÓN de
+                             PRISIÓN</li>
+                        <li>JUICIO ORAL</li>
+                        <li>RECURSO de APELACIÓN</li>
+                        <li>RECURSO de CASACIÓN</li>
+                        <li>QUEJA por RECURSO DENEGADO</li>
+                        <li>RECURSO EXTRAORDINARIO</li>
+                        <li>MEDIACIÓN PENAL EXITOSA</li>
+                        <li>ETAPA de EJECUCIÓN PENAL</li>
+                        <li>JUICIO ABREVIADO</li>
+                        <li>SUSPENSIÓN del JUICIO a PRUEBA</li>
+                        <li>HABEAS CORPUS</li>
+                      </ol>
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'Contacto' %}">Fuero Civil y Comercial </a>
+                    </h4>
+                    <p class="card-text">
+                      <ol>
+
+                        <li>PRESCRIPCIÓN ADQUISITIVA AUTOMOTOR</li>
+                        <li>PRESCRIPCIÓN ADQ. de INMUEBLES</li>
+                        <li>INTERDICTOS</li>
+                        <li>REIVINDICACIÓN de INMUEBLES</li>
+                        <li>APERTURA de JUICIO SUCESORIO*</li>
+                        <li>DECLARATORIA de HEREDEROS*</li>
+                        <li>DESALOJOS</li>
+                        <li>ADMINISTRACIÓN de SUCESORIOS</li>
+                        <li>COBRO de ALQUILERES</li>
+                        <li>CUMPLIMIENTO de CONTRATO</li>
+                        <li>DAÑOS y PERJUICIOS</li>
+                        <li>DIVISIÓN de CONDOMINIO</li>
+                        <li>PATROCINIO LEY 22.172</li>
+                        <li>ESCRITURACIÓN</li>
+                        <li>RESTITUCIÓN de BIENES</li>
+                        <li>DEFENSA DEL CONSUMIDOR. SUMARÍSIMO</li>
+                        <li>CONSTITUCIÓN de S.A.</li>
+                        <li>CONSTITUCIÓN de S.R.L. / FUNDACIÓN /</li>
+                        <li>ASOCIACIÓN</li>
+                        <li>ACCIONES SOCIETARIAS - IMPUGNACIÓN
+                             de ASAMBLEAS</li>
+                        <li>PRESENTACIÓN TRÁMITE de QUIEBRA</li>
+                        <li>PRESENTACIÓN y TRÁMITE de CONCURSO</li>
+                        <li>VERIFICACIÓN de CRÉDITO</li>
+                        <li>HOMOLOGACIÓN de CONVENIOS</li>
+                      </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="Inicio">Fuero Contencioso Administrativo</a>
+                    </h4>
+                    <p class="card-text">
+                      <ol>
+
+                       <li> ETAPA PRELIMINAR ADMINISTRATIVA</li>
+                       <li>ORDINARIO de PLENA JURISDICCIÓN</li>
+                       <li>APELACIÓN JUEZ de FALTAS</li>
+                       <li>AMPARO por MORA ADMINISTRATIVA</li>
+                       <li>AMPARO por DENEGACIÓN</li>
+                       <li>AMPAROS GENÉRICOS</li>
+                       <li>MPARO DER. COLECTIVO de CONSUMIDOR</li>
+                       <li>AMPARO DER. COLECTIVO AMBIENTAL</li>
+                       <li>MANDAMUS de EJECUCIÓN</li>
+                       <li>RECURSO de REVOCATORIA</li>
+                       <li>RECURSO RECLAMACIÓN ante EL CUERPO</li>
+                       <li>RECURSO DE CASACIÓN</li>
+                       <li>RECURSO EXTRAORDINARIO FEDERAL</li>
+                       <li>REC. de QUEJA por DENEGACIÓN DE R.E.F.</li>
+
+                      </ol>
+                      
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'Contacto' %}">Fuero Violencia de Genero</a>
+                    </h4>
+                    <p class="card-text">
+                       <ol>
+                         
+                         <li>AMPARO</li>
+                         <li>PROTECCIÓN DE PERSONA</li>
+                         <li>EXCLUSIÓN de HOGAR</li>
+                         <li>AUDIENCIA de VIOLENCIA FAMILIAR</li>
+                         <li>CARTA DOCUMENTO</li>
+                        </ol>
+
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'Contacto' %}">Gestiones ExtraJudiciales</a>
+                    </h4>
+                    <p class="card-text">
+                       <ol>
+                       
+                        <li>ACUERDO TRANSACCIONALES</li>
+                        <li>CONVENIOS</li>
+                        <li>TRAMITES DE MEDIACIÓN O CONCILIACIÓN (AUDIENCIA)</li>
+                        <li> ESTUDIO O INFORMACIÓN DE ACTUACIONES
+                             JUDICIALES O  ADMINISTRATIVAS</li>
+                        <li>ASISTENCIA Y ASESORAMIENTO DEL CLIENTES
+                             EN LA RELACION DE ACTOS JURIDICOS</li>
+                      </ol>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+             <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'core/img/Logo.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="{% url 'Contacto' %}">Gestoria</a>
+                    </h4>
+                    <p class="card-text">
+                       <ol>
+                       
+                        <li>Ofrecemos a Estudios de otras localidades servicio de «Gestoria Judicial y/o procuración Judicial en la localidad de San Salvador y San Pedro de Jujuy</li>
+                        <li>Realizamos todo tipo de diligencias, presentación de escritos, constituimos domicilios legales.</li>
+                        <li>Estos servicios deben contratarse individualmente por causa o expediente.</li>
+                        
+                      </ol>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+
+{% endblock %}
+
+
+
